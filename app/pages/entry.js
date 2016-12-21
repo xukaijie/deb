@@ -8,6 +8,8 @@ import {
     View
 } from 'react-native';
 import MainApp from '../pages/main';
+import FarmChildView from "./chatView"
+
 
 
 var {height, width} = Dimensions.get('window');
@@ -22,7 +24,7 @@ class Entry extends Component {
         this.timer = setTimeout(() => {
             InteractionManager.runAfterInteractions(() => {
                 navigator.resetTo({
-                    component: MainApp,
+                    component: FarmChildView,
                     name: 'mainapp'
                 });
             });

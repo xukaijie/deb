@@ -12,7 +12,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import IconFA from 'react-native-vector-icons/FontAwesome';
 
-import Address from './addressList.js'
+import Address from './addressList.js';
+import FarmChildView from "./chatView"
 
 import {
     AppRegistry,
@@ -44,6 +45,7 @@ class MainApp extends Component {
     render(){
 
         var thiz=this;
+
 
         return (
 

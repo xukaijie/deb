@@ -62,6 +62,7 @@ class AddressList extends Component{
 
             <TouchableHighlight  style={{flex:1}} onPress={this.clickitem.bind(this,rowData)}>
                 <View style={styles.itemStyle}>
+                    <Image source={require("../../images/xukaijie.jpg")} style={styles.imageStyle}/>
                     <View style={styles.subItemStyle}>
                         <Text style={{marginTop:5, fontSize:17}}>{rowData.name}</Text>
                         <Text style={{marginBottom:5, fontSize:13, color:'green'}}>{rowData.phone}</Text>
@@ -101,7 +102,6 @@ var styles = StyleSheet.create({
         // 下边框
         borderBottomWidth:1,
         borderBottomColor:'gray',
-        height:60,
     },
 
     imageStyle: {
